@@ -4,42 +4,28 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
+    /*
+    Movement: Movement is toggled by looking directly down
+    */
+
+    public float speed = 2.5f;
     public CharacterController characterController;
     public Transform camera;
 
-    public bool previouslyLookingForward = false;
-    public bool lookingForward = false;
-    public bool isMoving = false;
-
-    bool toggleForwardMotion;
-    bool startLookingForward;
-
-    public float speed = 1.0f;
-    public float toggleAngle = 30.0f;
-
+    private bool isMoving = false;
 
     private void Update()
     {
-        previouslyLookingForward = lookingForward;
+        Ray ray = new Ray(camera.position, camera.rotation * Vector3.forward);
+        RaycastHit hit;
 
-        if (camera.transform.eulerAngles.x >=15 && camera.transform.eulerAngles.x < 100) {
-            lookingForward = false;
-        }
-        else {
-            lookingForward = true;
-        }
-
-        if (lookingForward == true && previouslyLookingForward == false) {
-            startLookingForward = true;
+        if (Input.GetButtonDown("Fire1"))
+        {
+            isMoving = !isMoving;
         }
 
-        if (startLookingForward) {
-            toggleForwardMotion = !toggleForwardMotion;
-        }
-
-        isMoving = lookingForward && toggleForwardMotion;
-
-        if (isMoving) {
+        if (isMoving)
+        {
             Vector3 forward = camera.TransformDirection(Vector3.forward);
             characterController.SimpleMove(forward * speed);
         }
