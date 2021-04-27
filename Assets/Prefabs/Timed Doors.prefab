@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8756317596483182487}
   - component: {fileID: 8756317596483182484}
   m_Layer: 0
-  m_Name: Sliding Doors
+  m_Name: Timed Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,6 +55,16 @@ PlayableDirector:
     value: {fileID: 8756317597371560870}
   - key: {fileID: -5524556371184317010, guid: c17b98320f462af4bb5a03d2036a3801, type: 2}
     value: {fileID: 8756317597348703053}
+  - key: {fileID: 2729513509015400408, guid: c17b98320f462af4bb5a03d2036a3801, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8436488942273469517, guid: c17b98320f462af4bb5a03d2036a3801, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4785004933062044920, guid: c17b98320f462af4bb5a03d2036a3801, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 1780932342273112370, guid: c17b98320f462af4bb5a03d2036a3801, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4247601619180896126, guid: c17b98320f462af4bb5a03d2036a3801, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &8756317596483182484
