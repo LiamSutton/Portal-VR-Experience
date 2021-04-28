@@ -3866,8 +3866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 753716584}
-  baseFuseTimerLength: 2
-  fuseTimer: 1.5
+  baseFuseTimerLength: 1
 --- !u!43 &1043029937
 Mesh:
   m_ObjectHideFlags: 0
@@ -5169,6 +5168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 8756317596778670710}
   animator: {fileID: 919132147778152849}
+  buttonPressSoundEffect: {fileID: 8300000, guid: bd5d108d23cefcb4d86e80b312c79dc4,
+    type: 3}
 --- !u!95 &919132147778152849
 Animator:
   serializedVersion: 3

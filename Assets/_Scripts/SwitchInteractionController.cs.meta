@@ -3,7 +3,10 @@ guid: 4ef59c64b159f50429f09fd5657613c9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - door: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - buttonPressSoundEffect: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

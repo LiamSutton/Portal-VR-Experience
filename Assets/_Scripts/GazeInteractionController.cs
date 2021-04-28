@@ -5,8 +5,8 @@ using UnityEngine;
 public class GazeInteractionController : MonoBehaviour
 {
     public Transform camera;
-    public float baseFuseTimerLength = 1f;
-    public float fuseTimer = 1f;
+    public float baseFuseTimerLength = 0.5f;
+    private float fuseTimer = 0.5f;
     void Update()
     {
         Ray ray;

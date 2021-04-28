@@ -6,7 +6,7 @@ public class SwitchInteractionController : MonoBehaviour
 {
     public GameObject door;
     public Animator animator;
-
+    public AudioClip buttonPressSoundEffect;
     private float buttonDelay = 0.2f;
     private DoorController doorController;
 
@@ -22,7 +22,7 @@ public class SwitchInteractionController : MonoBehaviour
 
     private IEnumerator PlayButtonPressAnimation()
     {
-
+        AudioSource.PlayClipAtPoint(buttonPressSoundEffect, transform.position);
         animator.Play("Base Layer.Switch_Down");
         yield return new WaitForSeconds(buttonDelay);
         animator.Play("Base Layer.Switch_Up");
