@@ -11,6 +11,8 @@ public class DoorController : MonoBehaviour
     private bool shouldHide = false;
     public float doorMoveSpeed;
 
+    public AudioClip doorOpenSoundEffect;
+
     private void Update()
     {
         if (shouldHide)
@@ -30,5 +32,6 @@ public class DoorController : MonoBehaviour
     public void TriggerHide()
     {
         shouldHide = true;
+        AudioSource.PlayClipAtPoint(doorOpenSoundEffect, transform.position);
     }
 }
