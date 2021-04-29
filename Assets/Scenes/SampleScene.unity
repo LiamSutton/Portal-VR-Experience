@@ -7029,6 +7029,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 32.43799, y: 69.73419, z: 185.52116}
   m_Center: {x: 15.718402, y: 34.367096, z: -92.26066}
+--- !u!1 &1190430305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7769194556296811810, guid: cfc3cae0ea4bc88489df3644cfecd085,
+    type: 3}
+  m_PrefabInstance: {fileID: 951405024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1190430306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190430305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff08571db187f4a48bcf6a20b5fab3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonHitSoundEffect: {fileID: 8300000, guid: a9cab66eafe8ddd4593f6d9f402d7a65,
+    type: 3}
 --- !u!1001 &1215564371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7379,7 +7399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274071907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 204.53012, y: 9.5, z: 288.52988}
+  m_LocalPosition: {x: 204.56058, y: 9.5, z: 291.0297}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1474755519}
@@ -9586,6 +9606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box Dropper
       objectReference: {fileID: 0}
+    - target: {fileID: 8495442189626512129, guid: a2944fd6508eaa441859fa2e71c8498b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cube
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2944fd6508eaa441859fa2e71c8498b, type: 3}
 --- !u!1 &3585508558004538600
@@ -9671,7 +9696,7 @@ PrefabInstance:
     - target: {fileID: 4164144638443722858, guid: a3050373bdd14874f95c307d6f51cb86,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1368684e-13
+      value: -17.250004
       objectReference: {fileID: 0}
     - target: {fileID: 4164144638443722858, guid: a3050373bdd14874f95c307d6f51cb86,
         type: 3}
@@ -9681,7 +9706,7 @@ PrefabInstance:
     - target: {fileID: 4164144638443722858, guid: a3050373bdd14874f95c307d6f51cb86,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.800001
+      value: -42.000008
       objectReference: {fileID: 0}
     - target: {fileID: 4164144638443722858, guid: a3050373bdd14874f95c307d6f51cb86,
         type: 3}
