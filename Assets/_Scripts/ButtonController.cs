@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonController : MonoBehaviour
 {
     public AudioClip buttonHitSoundEffect;
+    public DoorController doorController;
     private bool isActive = false;
     private void OnCollisionEnter(Collision other)
     {
@@ -18,5 +19,6 @@ public class ButtonController : MonoBehaviour
     {
         isActive = true;
         AudioSource.PlayClipAtPoint(buttonHitSoundEffect, transform.transform.position);
+        doorController.TriggerHide();
     }
 }
