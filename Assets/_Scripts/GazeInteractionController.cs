@@ -19,11 +19,23 @@ public class GazeInteractionController : MonoBehaviour
         {
             hitObject = hit.collider.gameObject;
 
-            if (hitObject.CompareTag("Switch"))
+            if (hitObject.CompareTag("Door Switch"))
             {
                 if (fuseTimer <= 0)
                 {
                     // Click the button and trigger interaction
+                    hitObject.SendMessage("Activate");
+                    fuseTimer = baseFuseTimerLength;
+                }
+                else
+                {
+                    fuseTimer -= Time.deltaTime;
+                }
+            }
+            else if (hitObject.CompareTag("Box Switch"))
+            {
+                if (fuseTimer <= 0)
+                {
                     hitObject.SendMessage("Activate");
                     fuseTimer = baseFuseTimerLength;
                 }

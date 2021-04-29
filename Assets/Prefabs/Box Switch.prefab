@@ -271,11 +271,11 @@ GameObject:
   - component: {fileID: 8782629401387911428}
   - component: {fileID: 8262410165195674556}
   - component: {fileID: 8262410165195674557}
-  - component: {fileID: 8262410165195674531}
+  - component: {fileID: 2668543299924814854}
   - component: {fileID: 8262410165195674530}
   m_Layer: 0
-  m_Name: Door Switch
-  m_TagString: Door Switch
+  m_Name: Box Switch
+  m_TagString: Box Switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -328,7 +328,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &8262410165195674531
+--- !u!114 &2668543299924814854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,13 +337,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8262410165195674558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ef59c64b159f50429f09fd5657613c9, type: 3}
+  m_Script: {fileID: 11500000, guid: e2cbfb2d49eaead4f98f4771ab33b99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  boxDropper: {fileID: 0}
   animator: {fileID: 8262410165195674530}
-  buttonPressSoundEffect: {fileID: 8300000, guid: bd5d108d23cefcb4d86e80b312c79dc4,
-    type: 3}
+  buttonPressSoundEffect: {fileID: 0}
 --- !u!95 &8262410165195674530
 Animator:
   serializedVersion: 3

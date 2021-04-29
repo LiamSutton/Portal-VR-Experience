@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BoxDropperController : MonoBehaviour
 {
-    GameObject boxDropperLid;
+    public GameObject boxDropperLid;
 
     public void DropBox()
     {
