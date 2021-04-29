@@ -7,6 +7,7 @@ public class GazeInteractionController : MonoBehaviour
     public Transform camera;
     public float baseFuseTimerLength = 0.5f;
     private float fuseTimer = 0.5f;
+    private float rayDistance = 5f;
     void Update()
     {
         Ray ray;
@@ -15,7 +16,7 @@ public class GazeInteractionController : MonoBehaviour
 
         ray = new Ray(camera.position, camera.rotation * Vector3.forward);
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, rayDistance))
         {
             hitObject = hit.collider.gameObject;
 
