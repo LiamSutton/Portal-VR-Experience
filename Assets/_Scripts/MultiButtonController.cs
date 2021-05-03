@@ -15,6 +15,8 @@ public class MultiButtonController : MonoBehaviour
             Activate();
         }
     }
+
+    // Report to parent that a cube is on the button
     private void Activate()
     {
         isActive = true;
