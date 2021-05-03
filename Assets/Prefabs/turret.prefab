@@ -289,7 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5378836376015131180}
   - component: {fileID: 4750918838338750615}
-  - component: {fileID: 4750918838338750612}
+  - component: {fileID: 2481284523170348619}
   m_Layer: 0
   m_Name: turret
   m_TagString: Untagged
@@ -332,21 +332,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &4750918838338750612
-Animation:
+--- !u!114 &2481284523170348619
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4750918838338750614}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f700eb4be95315c4899a0fc200c7841b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceLines:
+  - {fileID: 8300000, guid: 49eabef00091ff043be08288b393f194, type: 3}
+  - {fileID: 8300000, guid: 0b83e9c053f13064dac34cc69e95165a, type: 3}
+  - {fileID: 8300000, guid: 74d162b9be0f36f4789cf909b666d2ea, type: 3}
+  - {fileID: 8300000, guid: 763e7d30bba31c74cb4364d94c17dd2a, type: 3}
+  - {fileID: 8300000, guid: 0ca8590e0569cb741ae9c64ecd87c113, type: 3}
+  - {fileID: 8300000, guid: bd3288d8b30ba62418e916f6f653f350, type: 3}
+  - {fileID: 8300000, guid: 6af5d65cea8eb074596b7eb7214cf600, type: 3}
+  - {fileID: 8300000, guid: 66d96715543d4ea4b991c063eebd7c4d, type: 3}
+  - {fileID: 8300000, guid: aeb12d7fe3635824886da17a1454656a, type: 3}
+  - {fileID: 8300000, guid: 075898b3b7fb53e428f2a31b7ecc0682, type: 3}
+  - {fileID: 8300000, guid: f8d7bed555c63a24ebd352e367812bc7, type: 3}
+  - {fileID: 8300000, guid: 92937538ebbdfbc45a9907bcebce3e1d, type: 3}
+  animator: {fileID: 0}
+  timer: 3
+  played: 0
 --- !u!1 &5197359560526194092
 GameObject:
   m_ObjectHideFlags: 0
