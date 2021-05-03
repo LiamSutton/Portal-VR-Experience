@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class MultiButtonController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    public MultiButtonDoorController parent;
+    public AudioClip buttonHitSoundEffect;
+    public bool isActive = false;
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Cube"))
+        {
+            Activate();
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Activate()
     {
-
+        isActive = true;
+        AudioSource.PlayClipAtPoint(buttonHitSoundEffect, transform.position);
+        parent.ChildActivated(this.gameObject);
     }
 }
