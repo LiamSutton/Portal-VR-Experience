@@ -16,7 +16,6 @@ public class PlayerMovementController : MonoBehaviour
             HandleMovement();
         }
     }
-
     private void HandleInput()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -27,6 +26,10 @@ public class PlayerMovementController : MonoBehaviour
 
     private void HandleMovement()
     {
+        if (!characterController.isGrounded)
+        {
+            print("LEFT GROUND AT: " + Time.time.ToString());
+        }
         Vector3 forward = camera.TransformDirection(Vector3.forward);
         characterController.SimpleMove(forward * speed);
     }
