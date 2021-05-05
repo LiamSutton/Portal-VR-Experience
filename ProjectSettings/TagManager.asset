@@ -11,6 +11,7 @@ TagManager:
   - Box Switch
   - Cube
   - TurretDeploy
+  - Turret
   layers:
   - Default
   - TransparentFX

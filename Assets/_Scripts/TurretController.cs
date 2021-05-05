@@ -21,6 +21,11 @@ public class TurretController : MonoBehaviour
     {
         if (transform.position == currentTarget.transform.position)
         {
+            if (currentTarget.CompareTag("TurretDeploy"))
+            {
+                Deploy();
+            }
+
             PickNewTarget();
         }
         MoveToTarget();
@@ -56,14 +61,6 @@ public class TurretController : MonoBehaviour
         else
         {
             currentTarget = positions[currentTargetIndex];
-        }
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("TurretDeploy"))
-        {
-            Deploy();
         }
     }
 }

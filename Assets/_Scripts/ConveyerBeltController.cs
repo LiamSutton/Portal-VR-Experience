@@ -4,5 +4,15 @@ using UnityEngine;
 
 public class ConveyerBeltController : MonoBehaviour
 {
-    public TurretController[] turretControllers;
+    public BoxCollider deployTrigger;
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        print("HIT");
+        if (other.gameObject.CompareTag("Turret"))
+        {
+            other.gameObject.GetComponent<TurretController>().Deploy();
+        }
+    }
 }
