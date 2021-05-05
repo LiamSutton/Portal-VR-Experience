@@ -10,6 +10,7 @@ TagManager:
   - Door Switch
   - Box Switch
   - Cube
+  - TurretDeploy
   layers:
   - Default
   - TransparentFX
