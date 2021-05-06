@@ -12,6 +12,7 @@ TagManager:
   - Cube
   - TurretDeploy
   - Turret
+  - Transporter
   layers:
   - Default
   - TransparentFX

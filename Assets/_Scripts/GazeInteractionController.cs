@@ -45,6 +45,17 @@ public class GazeInteractionController : MonoBehaviour
                     fuseTimer -= Time.deltaTime;
                 }
             }
+            else if (hitObject.CompareTag("Transporter"))
+            {
+                if (fuseTimer <= 0)
+                {
+                    hitObject.SendMessage("ChangeScene");
+                }
+                else
+                {
+                    fuseTimer -= Time.deltaTime;
+                }
+            }
             else
             {
                 fuseTimer = baseFuseTimerLength;
